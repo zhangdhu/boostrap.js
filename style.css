@@ -1,0 +1,32 @@
+.left_area .nav-stacked{
+	max-width: 300px;
+}
+
+
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover
+{
+  background-image:-webkit-linear-gradient(top,#055fb8,#095fb3);
+  // background-color: #0767C8
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #e8e8e8;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+.navbar-header a{
+  font-size: 18px;
+}
+.navbar-inverse{
+  background:#0666c5;
+  background-color: #0767c8;
+  border-radius: 0;
+}

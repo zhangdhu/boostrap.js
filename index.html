@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+
+		<!-- Bootstrap CSS -->
+		<link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">home</a>
+				</div>
+			
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">模态框</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"></a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>模态框</h1>
+				<p>modal.js</p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="col-md-3 left_area">
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active" role="persentation"><a href="">模态框</a></li>
+					<li role="persentation"><a href="">1</a></li>
+					<li role="persentation"><a href="">1</a></li>
+					<li role="persentation"><a href="">1</a></li>
+					<li role="persentation"><a href="">1</a></li>
+					<li role="persentation"><a href="">1</a></li>
+					<li role="persentation"><a href="">1</a></li>
+				</ul>
+			</div>
+			<div class="col-md-9">
+				<button id="modalLarge" class="btn btn-default" name="name1">大模态框</button>
+				<button id="modalOpen" class="btn btn-info" name="name1">默认模态框</button>
+				<button id="modalSmal" class="btn btn-primary" name="name1">小模态框</button>
+				<div class="modal fade" id="myModal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title">模态框</h4>
+							</div>
+							<div class="modal-body">
+								<p>fine one person</p>
+							</div>
+							<div class="modal-footer">
+								<button class="btn btn-default" data-dismiss="modal">关闭</button>
+								<button class="btn btn-primary">保存</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="largerModal">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">1</div>
+							<div class="modal-body">2</div>
+							<div class="modal-footer">3</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="smalModal">
+					<div class="modal-dialog modal-sm">
+						<div class="modal-content">
+							<div class="modal-header">1</div>
+							<div class="modal-body">2</div>
+							<div class="modal-footer">3</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- jQuery -->
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+		<script>
+			$("#modalOpen").click(function (argument) {
+				$('#myModal').modal()
+				// body...
+			})
+			$("#modalLarge").click(function (argument) {
+				$('#largerModal').modal()
+				// body...
+			})
+			$("#modalSmal").click(function (argument) {
+				$('#smalModal').modal()
+				// body...
+			})
+		</script>
+	</body>
+</html>
